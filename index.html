@@ -1,0 +1,37 @@
+<div class="container">
+    <h2>Calculadora de Calorías y Macros</h2>
+    <label for="peso">Peso (kg):</label>
+    <input type="number" id="peso" required>
+
+    <label for="altura">Altura (cm):</label>
+    <input type="number" id="altura" required>
+
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" required>
+
+    <label for="sexo">Sexo:</label>
+    <select id="sexo">
+        <option value="M">Masculino</option>
+        <option value="F">Femenino</option>
+    </select>
+
+    <label for="actividad">Nivel de actividad:</label>
+    <select id="actividad">
+        <option value="1.2">Sedentario</option>
+        <option value="1.375">Ligero (1-3 días de ejercicio)</option>
+        <option value="1.55">Moderado (3-5 días de ejercicio)</option>
+        <option value="1.725">Activo (6-7 días de ejercicio)</option>
+        <option value="1.9">Muy activo (entrenamiento intenso diario)</option>
+    </select>
+
+    <label for="objetivo">Objetivo:</label>
+    <select id="objetivo">
+        <option value="-500">Perder peso</option>
+        <option value="0">Mantener peso</option>
+        <option value="500">Ganar peso</option>
+    </select>
+
+    <button onclick="calcularCalorias()">Calcular</button>
+
+    <div class="result" id="resultado"></div>
+</div>
